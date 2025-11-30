@@ -18,7 +18,7 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <div className="overflow-x-hidden">
       <div className="relative w-full h-screen overflow-hidden">
         {/* Hero Section */}
         <div
@@ -40,7 +40,7 @@ export default function Home() {
         </div>
 
         {/* Floating Scroll Indicator */}
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 animate-bounce">
+        <div className="absolute bottom-8 right-8 z-20 flex flex-col items-center gap-2 animate-bounce">
           <div className="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-1">
             <div className="w-1.5 h-2 bg-white rounded-full animate-pulse"></div>
           </div>
@@ -50,7 +50,7 @@ export default function Home() {
       {/* Who We Are Section */}
       <section className="w-full bg-white py-24 px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-6xl font-normal text-black mb-12">Who we are</h2>
+          <h2 className="text-4xl md:text-6xl font-normal text-black mb-12">Who we are</h2>
 
           <div className="space-y-6 text-lg leading-relaxed text-gray-700">
             <p>
@@ -82,21 +82,21 @@ export default function Home() {
 
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-0 items-start">
           {/* Left Side - Titles */}
-          <div className="space-y-8 px-16 max-w-3xl">
+          <div className="space-y-8 px-4 md:px-8 lg:px-16 max-w-3xl">
             <div className="pb-4 border-b border-white/40">
-              <h3 className="text-5xl font-normal text-white">Corporate</h3>
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-normal text-white">Corporate</h3>
             </div>
             <div className="pb-4 border-b border-white/40">
-              <h3 className="text-5xl font-normal text-white">Litigation</h3>
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-normal text-white">Litigation</h3>
             </div>
             <div className="pb-4 border-b border-white/40">
-              <h3 className="text-5xl font-normal text-white">Civil</h3>
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-normal text-white">Civil</h3>
             </div>
           </div>
 
           {/* Right Side - Card extending beyond gray bg */}
           <div
-            className="bg-[#EBEBEB] p-12 relative"
+            className="bg-[#EBEBEB] p-6 md:p-12 relative"
             style={{
               marginBottom: "-12rem",
               marginTop: "4rem"
@@ -151,14 +151,14 @@ export default function Home() {
       {/* Publications Section */}
       <section className="w-full bg-white py-24 px-8 mt-24">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-6xl font-normal text-black mb-16 text-center">Publications</h2>
+          <h2 className="text-4xl md:text-6xl font-normal text-black mb-16 text-center">Publications</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* Column 1 */}
             <div className="space-y-8">
               {/* Publication 1 */}
               <div className="pb-6 border-b border-gray-300 group cursor-pointer">
-                <h3 className="text-3xl text-black mb-3 group-hover:text-primary transition-colors">
+                <h3 className="text-2xl md:text-3xl text-black mb-3 group-hover:text-primary transition-colors">
                   Company set-up: the public limited liability company - société anonyme
                 </h3>
                 <p className="text-gray-600">
@@ -168,7 +168,7 @@ export default function Home() {
 
               {/* Publication 2 */}
               <div className="pb-6 border-b border-gray-300 group cursor-pointer">
-                <h3 className="text-3xl text-black mb-3 group-hover:text-primary transition-colors">
+                <h3 className="text-2xl md:text-3xl text-black mb-3 group-hover:text-primary transition-colors">
                   Covid-19 legal bundle: Litigation and judiciary administration
                 </h3>
                 <p className="text-gray-600">
@@ -181,7 +181,7 @@ export default function Home() {
             <div className="space-y-8">
               {/* Publication 1 */}
               <div className="pb-6 border-b border-gray-300 group cursor-pointer">
-                <h3 className="text-3xl text-black mb-3 group-hover:text-primary transition-colors">
+                <h3 className="text-2xl md:text-3xl text-black mb-3 group-hover:text-primary transition-colors">
                   Company set-up: the private limited liability company - société à responsabilité limitée
                 </h3>
                 <p className="text-gray-600">
@@ -191,7 +191,7 @@ export default function Home() {
 
               {/* Publication 2 */}
               <div className="pb-6 border-b border-gray-300 group cursor-pointer">
-                <h3 className="text-3xl text-black mb-3 group-hover:text-primary transition-colors">
+                <h3 className="text-2xl md:text-3xl text-black mb-3 group-hover:text-primary transition-colors">
                   Covid-19 legal bundle: Business law
                 </h3>
                 <p className="text-gray-600">
@@ -201,7 +201,7 @@ export default function Home() {
 
               {/* Publication 3 */}
               <div className="pb-6 border-b border-gray-300 group cursor-pointer">
-                <h3 className="text-3xl text-black mb-3 group-hover:text-primary transition-colors">
+                <h3 className="text-2xl md:text-3xl text-black mb-3 group-hover:text-primary transition-colors">
                   Managers' liability of a private limited liability company (société à responsabilité limitée) under the Luxembourg Law of 10 August 1915 on Commercial Companies as amended ("Law")
                 </h3>
                 <p className="text-gray-600">
@@ -214,7 +214,7 @@ export default function Home() {
             <div className="space-y-8">
               {/* Publication 1 */}
               <div className="pb-6 border-b border-gray-300 group cursor-pointer">
-                <h3 className="text-3xl text-black mb-3 group-hover:text-primary transition-colors">
+                <h3 className="text-2xl md:text-3xl text-black mb-3 group-hover:text-primary transition-colors">
                   Another register is born: the new register of fiducies and trusts
                 </h3>
                 <p className="text-gray-600">
@@ -224,7 +224,7 @@ export default function Home() {
 
               {/* Publication 2 */}
               <div className="pb-6 border-b border-gray-300 group cursor-pointer">
-                <h3 className="text-3xl text-black mb-3 group-hover:text-primary transition-colors">
+                <h3 className="text-2xl md:text-3xl text-black mb-3 group-hover:text-primary transition-colors">
                   The New Law of 10 July 2020 on professional payment guarantees
                 </h3>
                 <p className="text-gray-600">
@@ -281,7 +281,7 @@ export default function Home() {
       {/* Contact Form Section */}
       <section className="w-full bg-white py-24 px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-6xl font-normal text-black mb-16 text-center">Get in Touch</h2>
+          <h2 className="text-4xl md:text-6xl font-normal text-black mb-16 text-center">Get in Touch</h2>
 
           <form className="space-y-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -344,6 +344,6 @@ export default function Home() {
       </section>
 
       <Footer />
-    </>
+    </div>
   );
 }
