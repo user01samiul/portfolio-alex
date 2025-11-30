@@ -40,7 +40,7 @@ export default function Home() {
         </div>
 
         {/* Floating Scroll Indicator */}
-        <div className="absolute bottom-8 right-8 z-20 flex flex-col items-center gap-2 animate-bounce">
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 md:bottom-8 md:right-8 md:left-auto md:translate-x-0 z-20 flex flex-col items-center gap-2 animate-bounce">
           <div className="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-1">
             <div className="w-1.5 h-2 bg-white rounded-full animate-pulse"></div>
           </div>
