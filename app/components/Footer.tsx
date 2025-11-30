@@ -4,16 +4,16 @@ export default function Footer() {
   return (
     <>
       {/* Footer Section */}
-      <footer className="relative w-full bg-[#B9B9B9] py-32 px-16">
-        <div className="grid grid-cols-12 gap-8">
-          {/* Column 1 - Logo & Description (3/12 width) */}
-          <div className="col-span-3 space-y-6">
+      <footer className="relative w-full bg-[#B9B9B9] py-12 md:py-32 px-6 md:px-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 md:gap-8">
+          {/* Column 1 - Logo & Description */}
+          <div className="col-span-1 md:col-span-2 lg:col-span-3 space-y-6">
             <div className="flex flex-col">
               <div className="flex items-center gap-3">
-                <span className="text-3xl font-bold text-primary">Alecsandru</span>
-                <div className="w-[3px] h-8 bg-primary"></div>
+                <span className="text-2xl md:text-3xl font-bold text-primary">Alecsandru</span>
+                <div className="w-[3px] h-6 md:h-8 bg-primary"></div>
               </div>
-              <span className="text-sm text-black mt-2">Attorney at law at night</span>
+              <span className="text-xs md:text-sm text-black mt-2">Attorney at law at night</span>
             </div>
             <div className="border-t border-white/40 pt-6">
               <p className="text-white text-sm leading-relaxed">
@@ -22,12 +22,12 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2 - Luxembourg Office (3/12 width) */}
-          <div className="col-span-3 space-y-4">
-            <h4 className="text-white font-bold text-lg mb-4">Luxembourg Office</h4>
+          {/* Column 2 - Luxembourg Office */}
+          <div className="col-span-1 md:col-span-1 lg:col-span-3 space-y-4">
+            <h4 className="text-white font-bold text-base md:text-lg mb-4">Luxembourg Office</h4>
             <div>
-              <p className="text-white/80 text-sm font-bold mb-2">ADDRESS</p>
-              <p className="text-white text-sm leading-relaxed">
+              <p className="text-white/80 text-xs md:text-sm font-bold mb-2">ADDRESS</p>
+              <p className="text-white text-xs md:text-sm leading-relaxed">
                 27, rue de la Paix<br />
                 2312 Luxembourg<br />
                 Grand Duchy of Luxembourg
@@ -35,42 +35,42 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 3 - Contact Us (3/12 width) */}
-          <div className="col-span-3 space-y-4">
-            <h4 className="text-white font-bold text-lg mb-4">Contact Us</h4>
+          {/* Column 3 - Contact Us */}
+          <div className="col-span-1 md:col-span-1 lg:col-span-3 space-y-4">
+            <h4 className="text-white font-bold text-base md:text-lg mb-4">Contact Us</h4>
             <div>
-              <p className="text-white/80 text-sm font-bold mb-2">E-MAIL</p>
-              <p className="text-white text-sm mb-4">info@carstoiu.com</p>
+              <p className="text-white/80 text-xs md:text-sm font-bold mb-2">E-MAIL</p>
+              <p className="text-white text-xs md:text-sm mb-4">info@carstoiu.com</p>
             </div>
             <div>
-              <p className="text-white/80 text-sm font-bold mb-2">PHONE</p>
-              <p className="text-white text-sm">
+              <p className="text-white/80 text-xs md:text-sm font-bold mb-2">PHONE</p>
+              <p className="text-white text-xs md:text-sm">
                 (+352) 28-12-17<br />
                 (+352) 28-12-17-1
               </p>
             </div>
             <div>
-              <p className="text-white/80 text-sm font-bold mb-2">FAX</p>
-              <p className="text-white text-sm">(+352) 28-12-17-77</p>
+              <p className="text-white/80 text-xs md:text-sm font-bold mb-2">FAX</p>
+              <p className="text-white text-xs md:text-sm">(+352) 28-12-17-77</p>
             </div>
           </div>
 
-          {/* Column 4 - Useful Links (3/12 width) */}
-          <div className="col-span-3 space-y-4">
-            <h4 className="text-white font-bold text-lg mb-4">Useful links</h4>
+          {/* Column 4 - Useful Links */}
+          <div className="col-span-1 md:col-span-2 lg:col-span-3 space-y-4">
+            <h4 className="text-white font-bold text-base md:text-lg mb-4">Useful links</h4>
             <div>
-              <p className="text-white/80 text-sm font-bold mb-2">WEBSITE</p>
+              <p className="text-white/80 text-xs md:text-sm font-bold mb-2">WEBSITE</p>
               <div className="space-y-2">
-                <p className="text-white text-sm hover:text-primary cursor-pointer transition-colors">
+                <p className="text-white text-xs md:text-sm hover:text-primary cursor-pointer transition-colors">
                   Privacy & cookie policy
                 </p>
-                <p className="text-white text-sm hover:text-primary cursor-pointer transition-colors">
+                <p className="text-white text-xs md:text-sm hover:text-primary cursor-pointer transition-colors">
                   General Terms and Conditions
                 </p>
               </div>
             </div>
             <div>
-              <p className="text-white/80 text-sm font-bold mb-2">SOCIAL</p>
+              <p className="text-white/80 text-xs md:text-sm font-bold mb-2">SOCIAL</p>
               <div className="flex gap-3">
                 <a
                   href="#"

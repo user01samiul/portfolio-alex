@@ -33,8 +33,8 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/30" />
 
         {/* Hero Content */}
-        <div className="relative z-10 flex items-center justify-center h-full px-8">
-          <h1 className="text-8xl text-white text-center leading-tight w-[85%]">
+        <div className="relative z-10 flex items-center justify-center h-full px-4 md:px-8">
+          <h1 className="text-4xl md:text-6xl lg:text-8xl text-white text-center leading-tight w-[95%] md:w-[90%] lg:w-[85%]">
             Your vision Our expertise Right now
           </h1>
         </div>
@@ -245,16 +245,16 @@ export default function Home() {
 
       {/* Team Section */}
       <section
-        className="relative w-full min-h-screen bg-cover bg-center py-24 px-8 flex items-center"
+        className="relative w-full min-h-screen bg-cover bg-center py-12 md:py-24 px-4 md:px-8 flex items-center"
         style={{
           backgroundImage: "url('https://carstoiu.com/wp-content/uploads/2020/05/HOmeage-background-scaled.jpg')"
         }}
       >
-        {/* White Card on Left */}
-        <div className="ml-16 max-w-5xl">
-          <div className="bg-white flex overflow-hidden min-h-[600px]">
+        {/* White Card */}
+        <div className="w-full md:ml-16 max-w-full md:max-w-5xl mx-auto md:mx-0">
+          <div className="bg-white flex flex-col md:flex-row overflow-hidden min-h-auto md:min-h-[600px]">
             {/* Left Side - Person Image */}
-            <div className="w-2/5">
+            <div className="w-full md:w-2/5 h-64 md:h-auto">
               <img
                 src="https://carstoiu.com/wp-content/themes/carstoiu/img/about_us_person_bg.jpg"
                 alt="Alexandru Onac"
@@ -263,14 +263,14 @@ export default function Home() {
             </div>
 
             {/* Right Side - Content */}
-            <div className="w-3/5 p-16 flex flex-col justify-center">
-              <h3 className="text-4xl text-black mb-6 font-normal">
+            <div className="w-full md:w-3/5 p-8 md:p-16 flex flex-col justify-center">
+              <h3 className="text-2xl md:text-4xl text-black mb-4 md:mb-6 font-normal">
                 We understand your legal needs
               </h3>
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              <p className="text-base md:text-lg text-gray-700 mb-6 md:mb-8 leading-relaxed">
                 "Our clients are sharp, demanding and result driven. We like that. We find simple and fast solutions to their most challenging and complex cases."
               </p>
-              <p className="text-base text-black font-medium">
+              <p className="text-sm md:text-base text-black font-medium">
                 Alexandru Onac / Partner
               </p>
             </div>
